@@ -19,7 +19,7 @@ export class RatesComponent implements OnInit
 
   coin(crypto)
   {
-    // console.log(crypto);
+    // //console.log(crypto);
     this.exchange.prices(crypto);
     this.exchange.markets(crypto);
     this.exchange.ticker(crypto);
@@ -31,12 +31,12 @@ export class RatesComponent implements OnInit
     {
       this.alpha=data;
       this.rates=this.alpha.tickers;
-      // console.log(this.rates);
+      // //console.log(this.rates);
     });
 
     // this.authService.getprice().subscribe(data =>
     // {
-    //   console.log(data.bpi.USD.rate);
+    //   //console.log(data.bpi.USD.rate);
     //   this.bitcoin=data.bpi.USD.rate;
     // });
   }

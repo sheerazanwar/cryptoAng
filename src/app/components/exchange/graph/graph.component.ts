@@ -88,11 +88,11 @@ chartData={};
     var totalData = [];
     this.chatService.getcandlestick().subscribe(data =>
     {
-      // console.log(data);
+      // //console.log(data);
       // this.neww=data;
-      // console.log("chartData=> ",this.chartData);
+      // //console.log("chartData=> ",this.chartData);
       // data.forEach(function(x){
-      //   console.log("pushed :",data);
+      //   //console.log("pushed :",data);
       // this.chartData.series[0].data.push(x);
       //
       // })

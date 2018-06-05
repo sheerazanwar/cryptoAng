@@ -124,7 +124,7 @@
             }
             // else ...
             if (win.console) {
-                console.log(msg); // eslint-disable-line no-console
+                //console.log(msg); // eslint-disable-line no-console
             }
         };
 
@@ -2400,7 +2400,7 @@
          * });
          *
          * // Use the Time object
-         * console.log(
+         * //console.log(
          * 	   'Current time in New York',
          *	    chart.time.dateFormat('%Y-%m-%d %H:%M:%S', Date.now())
          * );
@@ -2445,7 +2445,7 @@
              * });
              *
              * // Use the Time object
-             * console.log(
+             * //console.log(
              * 	   'Current time in New York',
              *	    chart.time.dateFormat('%Y-%m-%d %H:%M:%S', Date.now())
              * );
@@ -3508,7 +3508,7 @@
                  * datetime axis is milliseconds since 1970-01-01 00:00:00.
                  *
                  * <pre>click: function(e) {
-                 *     console.log(
+                 *     //console.log(
                  *         Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', e.xAxis[0].value),
                  *         e.yAxis[0].value
                  *     )
@@ -3595,12 +3595,12 @@
                  *
                  * <pre>selection: function(event) {
                  *     // log the min and max of the primary, datetime x-axis
-                 *     console.log(
+                 *     //console.log(
                  *         Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', event.xAxis[0].min),
                  *         Highcharts.dateFormat('%Y-%m-%d %H:%M:%S', event.xAxis[0].max)
                  *     );
                  *     // log the min and max of the y axis
-                 *     console.log(event.yAxis[0].min, event.yAxis[0].max);
+                 *     //console.log(event.yAxis[0].min, event.yAxis[0].max);
                  * }</pre>
                  *
                  * @type {Function}

@@ -96,7 +96,7 @@ export class ProfileComponent implements OnInit
           this.router.navigate(['/exchange']);
         }, 2000);
       }
-      console.log("saasa");
+      //console.log("saasa");
     });
   }
 

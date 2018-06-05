@@ -57,7 +57,7 @@ this.createForm();
 
     this.authService.login(user).subscribe(data => {
       // Check if response was a success or error
-      console.log(data);
+      //console.log(data);
       if (!data.success) {
         this.messageClass = 'alert alert-danger'; // Set bootstrap error class
         this.message = data.message; // Set error message

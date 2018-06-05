@@ -224,7 +224,7 @@ export class DepositComponent implements OnInit
     this.coin=v.symbol;
     this.authService.getAddress(this.coin).subscribe(data=>
     {
-      console.log(data);
+      //console.log(data);
       this.address=data.result.address;
       if(data.coin!=null)
       {
@@ -279,7 +279,7 @@ export class DepositComponent implements OnInit
 
     this.authService.getprice().subscribe(data =>
     {
-      console.log(data.bpi.USD.rate);
+      //console.log(data.bpi.USD.rate);
       this.bitcoin=data.bpi.USD.rate;
     });
 

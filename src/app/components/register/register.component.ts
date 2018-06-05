@@ -184,7 +184,7 @@ export class RegisterComponent implements OnInit
   {
     this.authService.checkEmail(this.form.get('email').value).subscribe(data =>
     {
-      console.log("fff");
+      //console.log("fff");
       if (!data.success)
       {
         this.emailValid = false;

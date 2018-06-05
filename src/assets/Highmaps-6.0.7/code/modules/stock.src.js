@@ -61,7 +61,7 @@
          * });
          *
          * // Use the Time object
-         * console.log(
+         * //console.log(
          * 	   'Current time in New York',
          *	    chart.time.dateFormat('%Y-%m-%d %H:%M:%S', Date.now())
          * );
@@ -106,7 +106,7 @@
              * });
              *
              * // Use the Time object
-             * console.log(
+             * //console.log(
              * 	   'Current time in New York',
              *	    chart.time.dateFormat('%Y-%m-%d %H:%M:%S', Date.now())
              * );

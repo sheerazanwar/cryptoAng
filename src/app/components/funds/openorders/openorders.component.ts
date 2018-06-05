@@ -78,9 +78,9 @@ export class OpenordersComponent implements OnInit
           this.y++;
         }
       }
-      // console.log("OpenOrder BTC = ",this.open);
-      // console.log("Filled : ",this.filled);
-      // console.log("UnFilled : ",this.unfilled);
+      // //console.log("OpenOrder BTC = ",this.open);
+      // //console.log("Filled : ",this.filled);
+      // //console.log("UnFilled : ",this.unfilled);
       this.showSpinner=false;
     });
 

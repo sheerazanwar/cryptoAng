@@ -1874,7 +1874,7 @@
                 }
 
                 if (settings.debug.showSkipSummary) {
-                    console.log('skipped points:', skipped); // eslint-disable-line no-console
+                    //console.log('skipped points:', skipped); // eslint-disable-line no-console
                 }
 
                 function pushSupplementPoint(point) {
@@ -3121,7 +3121,7 @@
                         renderer.pushSeries(series);
                         // Perform the actual renderer if we're on series level
                         renderIfNotSeriesBoosting(renderer, this, chart);
-                        // console.log(series, chart);
+                        // //console.log(series, chart);
                     }
 
                     /* This builds the KD-tree */

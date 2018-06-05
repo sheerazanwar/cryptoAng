@@ -35,7 +35,7 @@ export class TradehistoryComponent implements OnInit
     {
       this.authService.cancelone(id,symbol).subscribe(data=>
       {
-        console.log(data);
+        //console.log(data);
       });
     }
 
@@ -55,7 +55,7 @@ export class TradehistoryComponent implements OnInit
         this.y=0;
         this.trades=data;
         this.trades=this.trades.history;
-        // console.log(this.trades);
+        // //console.log(this.trades);
         for(this.i=0;this.i<this.trades.length;this.i++)
         {
           if(this.trades[this.i].status.status=="FILLED")
@@ -71,9 +71,9 @@ export class TradehistoryComponent implements OnInit
             this.y++;
           }
         }
-        // console.log("OpenOrder BTC = ",this.open);
-        // console.log("Filled : ",this.filled);
-        // console.log("UnFilled : ",this.unfilled);
+        // //console.log("OpenOrder BTC = ",this.open);
+        // //console.log("Filled : ",this.filled);
+        // //console.log("UnFilled : ",this.unfilled);
       });
 
       this.sub = Observable.interval(5000).subscribe((val) =>

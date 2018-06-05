@@ -2071,7 +2071,7 @@
     			//curY = f2(((y - this._runningPageHeight));
 
     			//			if (curY < 0){
-    			//				console.log('auto page break');
+    			//				//console.log('auto page break');
     			//				this.addPage();
     			//				this._runningPageHeight = y -  (activeFontSize * 1.7);
     			//				curY = f2(activeFontSize * 1.7);
@@ -3010,7 +3010,7 @@
                 // for safety, shouldn't normally be the case
                 this.internal.write('/AcroForm ' + this.acroformPlugin.acroFormDictionaryRoot.objId + ' ' + 0 + ' R');
             } else {
-                console.log('Root missing...');
+                //console.log('Root missing...');
             }
         };
 
@@ -3688,7 +3688,7 @@ Q\n";
                     }
                 }
                 if (!_objId) {
-                    console.log("Couldn't create Object ID");
+                    //console.log("Couldn't create Object ID");
                 }
                 return _objId;
             },
@@ -4098,7 +4098,7 @@ Q\n";
 
     AcroForm.RadioButton.prototype.setAppearance = function (appearance) {
         if (!('createAppearanceStream' in appearance && 'createMK' in appearance)) {
-            console.log("Couldn't assign Appearance to RadioButton. Appearance was Invalid!");
+            //console.log("Couldn't assign Appearance to RadioButton. Appearance was Invalid!");
             return;
         }
         for (var i in this.__Kids) {
@@ -8378,25 +8378,25 @@ Q\n";
     		}return sum;
     	},
     	    logImg = function logImg(img) {
-    		console.log("width: " + img.width);
-    		console.log("height: " + img.height);
-    		console.log("bits: " + img.bits);
-    		console.log("colorType: " + img.colorType);
-    		console.log("transparency:");
-    		console.log(img.transparency);
-    		console.log("text:");
-    		console.log(img.text);
-    		console.log("compressionMethod: " + img.compressionMethod);
-    		console.log("filterMethod: " + img.filterMethod);
-    		console.log("interlaceMethod: " + img.interlaceMethod);
-    		console.log("imgData:");
-    		console.log(img.imgData);
-    		console.log("palette:");
-    		console.log(img.palette);
-    		console.log("colors: " + img.colors);
-    		console.log("colorSpace: " + img.colorSpace);
-    		console.log("pixelBitlength: " + img.pixelBitlength);
-    		console.log("hasAlphaChannel: " + img.hasAlphaChannel);
+    		//console.log("width: " + img.width);
+    		//console.log("height: " + img.height);
+    		//console.log("bits: " + img.bits);
+    		//console.log("colorType: " + img.colorType);
+    		//console.log("transparency:");
+    		//console.log(img.transparency);
+    		//console.log("text:");
+    		//console.log(img.text);
+    		//console.log("compressionMethod: " + img.compressionMethod);
+    		//console.log("filterMethod: " + img.filterMethod);
+    		//console.log("interlaceMethod: " + img.interlaceMethod);
+    		//console.log("imgData:");
+    		//console.log(img.imgData);
+    		//console.log("palette:");
+    		//console.log(img.palette);
+    		//console.log("colors: " + img.colors);
+    		//console.log("colorSpace: " + img.colorSpace);
+    		//console.log("pixelBitlength: " + img.pixelBitlength);
+    		//console.log("hasAlphaChannel: " + img.hasAlphaChannel);
     	};
 
     	jsPDFAPI.processPNG = function (imageData, imageIndex, alias, compression, dataAsBinaryString) {
@@ -8635,7 +8635,7 @@ Q\n";
     		    kerning = options.kerning ? options.kerning : this.internal.getFont().metadata.Unicode.kerning,
     		    kerningFractionOf = kerning.fof ? kerning.fof : 1;
 
-    		// console.log("widths, kergnings", widths, kerning)
+    		// //console.log("widths, kergnings", widths, kerning)
 
     		var i,
     		    l,
@@ -12063,7 +12063,7 @@ Q\n";
     			if (that.pending !== 0) {
     				strm.flush_pending();
     				if (strm.avail_out === 0) {
-    					// console.log(" avail_out==0");
+    					// //console.log(" avail_out==0");
     					// Since avail_out is 0, deflate will be called again with
     					// more output space, but possibly with both pending and
     					// avail_in equal to zero. There won't be anything to do,
@@ -12239,9 +12239,9 @@ Q\n";
     			// if (that.dstate.pending_buf.length <= that.dstate.pending_out || that.next_out.length <= that.next_out_index
     			// || that.dstate.pending_buf.length < (that.dstate.pending_out + len) || that.next_out.length < (that.next_out_index +
     			// len)) {
-    			// console.log(that.dstate.pending_buf.length + ", " + that.dstate.pending_out + ", " + that.next_out.length + ", " +
+    			// //console.log(that.dstate.pending_buf.length + ", " + that.dstate.pending_out + ", " + that.next_out.length + ", " +
     			// that.next_out_index + ", " + len);
-    			// console.log("avail_out=" + that.avail_out);
+    			// //console.log("avail_out=" + that.avail_out);
     			// }
 
     			that.next_out.set(that.dstate.pending_buf.subarray(that.dstate.pending_out, that.dstate.pending_out + len), that.next_out_index);
@@ -13484,8 +13484,8 @@ Q\n";
     LinearGradientContainer.prototype.stepRegExp = /((?:rgb|rgba)\(\d{1,3},\s\d{1,3},\s\d{1,3}(?:,\s[0-9\.]+)?\))\s*(\d{1,3})?(%|px)?/;
 
     function log() {
-        if (window.html2canvas.logging && window.console && window.console.log) {
-            Function.prototype.bind.call(window.console.log, (window.console)).apply(window.console, [(Date.now() - window.html2canvas.start) + "ms", "html2canvas:"].concat([].slice.call(arguments, 0)));
+        if (window.html2canvas.logging && window.console && window.//console.log) {
+            Function.prototype.bind.call(window.//console.log, (window.console)).apply(window.console, [(Date.now() - window.html2canvas.start) + "ms", "html2canvas:"].concat([].slice.call(arguments, 0)));
         }
     }
 
